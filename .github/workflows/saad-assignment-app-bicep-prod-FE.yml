@@ -57,7 +57,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'saad-assignment-app-bicep-dev-FE'
+          app-name: 'saad-assignment-app-dev-FE'
           package: .
   deploy-prod:
     if: github.ref == 'refs/heads/main'
@@ -81,5 +81,5 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'saad-assignment-app-bicep-prod-FE'
+          app-name: 'saad-assignment-app-prod-FE'
           package: .
